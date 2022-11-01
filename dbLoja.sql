@@ -56,3 +56,9 @@ insert into tbUsuarios (nome, senha) values('Duval.Lélis', '12345612');
 select * from tbFuncionarios;
 
 select * from tbUsuarios;
+
+
+-- alterando os registros das tabelas
+update tbUsuarios set senha  = '19216801' where codusu = 2;
+
+select * from tbUsuarios;
