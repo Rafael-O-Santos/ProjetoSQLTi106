@@ -109,9 +109,10 @@ select * from tbProdutos where codProd = 2;
 select * from tbProdutos where descricao like '%%';
 
 -- Tipos de like
--- %M - tudo que começa com M
--- M% tudo que termina com M
+-- %M - tudo que termina com M
+-- M% tudo que começa com M
 -- %M% tudo que tem M (Começo meio e fim)
+-- sempre com where algo da tabela like '%a%'
 
 update tbProdutos set preco = preco * 1.10 where preco > 11.00;
 update tbProdutos set preco = preco * 0.90 where preco < 11.00;
